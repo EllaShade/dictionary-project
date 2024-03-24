@@ -3,7 +3,13 @@
 }
 
 .App-logo {
-  max-width: 200px;
+  max-width: 200px !important;
   display: block;
   margin: 0 auto;
+}
+
+.App footer {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 14px;
 }
