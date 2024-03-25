@@ -13,8 +13,11 @@ function App() {
         <Dictionary />
       </main>
       <footer>
-        This project was coded by Ella Graf and is on GitHub and hosted on
-        Netlify.
+        This project was coded by{" "}
+        <a href="https://github.com/EllaShade">Ella Graf</a> and is on{" "}
+        <a href="https://github.com/EllaShade/dictionary-project">GitHub</a> and
+        hosted on{" "}
+        <a href="https://dictionary-cyclopedia.netlify.app/">Netlify</a> .
       </footer>
     </div>
   );
