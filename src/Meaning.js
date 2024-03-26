@@ -1,28 +1,34 @@
 import React from "react";
 import Synonyms from "./Synonyms";
 
+import "./Meaning.css";
+
 export default function Meaning(props) {
   console.log(props.meaning);
+
+  const capitalizeFirstLetter = (word) => {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  };
+
   return (
     <div className="Meaning">
-      <h3>{props.meaning.partOfSpeech}</h3>
+      <h3>{capitalizeFirstLetter(props.meaning.partOfSpeech)}</h3>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
-            <p>
+            <div className="definition">
               <strong>Definition:</strong> {definition.definition}
-              <br />
-              <strong>Example:</strong> <em>{definition.example}</em>
-              <br />
-              <strong>Synonyms:</strong>
-              <Synonyms synonyms={definition.synonyms} />
-              {definition.synonyms[0]}
-            </p>
+            </div>
+            <div className="example">
+              <strong>Example:</strong> {definition.example}
+            </div>
           </div>
         );
       })}
-      <p>{props.meaning.definitions[0].definition}</p>
-      <p>{props.meaning.definitions[0].example}</p>
+      <div className="synonyms">
+        <strong>Synonyms:</strong>
+        <Synonyms synonyms={props.meaning.synonyms} />
+      </div>
     </div>
   );
 }

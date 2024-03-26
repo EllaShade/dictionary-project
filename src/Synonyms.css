@@ -1,0 +1,16 @@
+.Synonyms {
+  margin: 15px 0 0;
+  padding: 0;
+}
+
+.Synonyms ul {
+  margin: auto;
+  white-space: nowrap;
+}
+.Synonyms li {
+  display: inline-block;
+  margin: 5px 5px;
+  padding: 0 8px;
+  border: 0.5px solid #d5bdaf;
+  border-radius: 6px;
+}

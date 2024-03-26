@@ -1,0 +1,30 @@
+.Results:first-letter {
+  text-transform: uppercase;
+}
+
+.Results h2 {
+  margin: 10px 0 10px 20px;
+  font-size: 55px;
+  font-weight: 450;
+  color: #4c4444;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-transform: capitalize;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #c26652, 0 0 20px #d1624a,
+      0 0 25px #bd553d, 0 0 30px #d15e44, 0 0 35px #ff5733;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 15px #af4e38, 0 0 20px #ff5733,
+      0 0 25px #b6513a, 0 0 30px #b8553f, 0 0 35px #963924, 0 0 45px #812b18;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Results h2 {
+    font-size: 35px;
+    margin: 5px 0 5px 12px;
+  }
+}

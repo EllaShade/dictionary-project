@@ -1,0 +1,24 @@
+.Phonetic audio {
+  color: #d5bdaf;
+  border: 2px solid #d5bdaf;
+  border-radius: 25px;
+  width: 30%;
+  margin: 10px 0 10px 20px;
+}
+
+.phonetic-text {
+  font-size: 18px;
+  margin: 10px 0 10px 20px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  .Phonetic audio {
+    width: 60%;
+    margin: 10px 0 10px 15px;
+  }
+
+  .phonetic-text {
+    font-size: 16px;
+  }
+}

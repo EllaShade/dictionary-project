@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} alt="logo" className="App-logo img-fluid" />
+        <img src={logo} alt="logo" className="App-logo" />
       </header>
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="Sunset" />
       </main>
       <footer>
         This project was coded by{" "}

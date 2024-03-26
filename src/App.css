@@ -1,11 +1,37 @@
+body {
+  background: #eae4e2 !important;
+}
+
 .App-header {
-  margin: 40px 0;
+  margin: 80px 0;
 }
 
 .App-logo {
-  max-width: 200px !important;
+  max-width: 130px;
+  opacity: 0.8;
   display: block;
   margin: 0 auto;
+  box-shadow: 0 0 20px rgb(234, 228, 226);
+  border-radius: 40px;
+  animation: logo-animation 4s infinite alternate;
+}
+
+@keyframes logo-animation {
+  0% {
+    opacity: 0.8;
+    transform: rotate(0deg) scale(1);
+    box-shadow: 0 0 20px rgb(234, 228, 226);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(0deg) scale(1);
+    box-shadow: 0 0 20px rgb(234, 228, 226);
+  }
 }
 
 .App footer {
@@ -16,4 +42,19 @@
 
 .App footer a {
   text-decoration: none;
+  color: #b1856e;
+}
+
+@media screen and (max-width: 800px) {
+  .App-header {
+    margin-top: 15px;
+  }
+  .App-logo {
+    max-width: 110px;
+    margin: 60px auto;
+  }
+  .App footer {
+    margin: 30px 20px;
+    font-size: 14px;
+  }
 }

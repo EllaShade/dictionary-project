@@ -1,0 +1,43 @@
+.Meaning h3 {
+  font-weight: 600;
+}
+
+.Meaning .definition {
+  font-size: 16px;
+  color: #696161;
+  margin: 10px 0;
+}
+
+.Meaning .definition strong {
+  font-size: 18px;
+}
+
+.Meaning .example {
+  font-size: 14.5px;
+  color: #31231b;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.Meaning .example strong {
+  font-size: 16px;
+}
+.Meaning .synonyms strong {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .Meaning h3 {
+    font-size: 22px;
+  }
+
+  .Meaning .definition {
+    font-size: 16px;
+    color: #696161;
+  }
+
+  .Meaning .definition strong {
+    font-size: 14.5px;
+  }
+}
