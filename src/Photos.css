@@ -8,3 +8,13 @@
 .Photos img:hover {
   transform: scale(1.4);
 }
+
+@media screen and (max-width: 800px) {
+  .Photos img {
+    margin: 4px;
+  }
+
+  .Photos .col-4 {
+    width: 100%;
+  }
+}
