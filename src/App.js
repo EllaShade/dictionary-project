@@ -14,10 +14,26 @@ function App() {
       </main>
       <footer>
         This project was coded by{" "}
-        <a href="https://github.com/EllaShade">Ella Graf</a> and is on{" "}
-        <a href="https://github.com/EllaShade/dictionary-project">GitHub</a> and
-        hosted on{" "}
-        <a href="https://dictionary-cyclopedia.netlify.app/">Netlify</a> .
+        <a href="https://github.com/EllaShade" target="_blank" rel="noreferrer">
+          Ella Graf
+        </a>{" "}
+        and is on{" "}
+        <a
+          href="https://github.com/EllaShade/dictionary-project"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>{" "}
+        and hosted on{" "}
+        <a
+          href="https://dictionary-cyclopedia.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>{" "}
+        .
       </footer>
     </div>
   );
